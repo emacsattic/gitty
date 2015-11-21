@@ -43,6 +43,8 @@
 
 ;;; Code:
 
+(require 'vc-git)
+
 (defvar gitty-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "C-x v b") 'gitty-checkout)
